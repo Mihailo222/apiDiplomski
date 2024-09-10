@@ -1,0 +1,16 @@
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+   config.vm.define "wpserver" do |wordpress|
+        wordpress.vm.box = "geerlingguy/ubuntu2004"
+        wordpress.ssh.insert_key = false
+        wordpress.vm.hostname = "wordpress"
+        wordpress.vm.network "private_network", ip: "192.168.56.11", netmask: "255.255.255.0"
+
+        wordpress.vm.provision "ansible" do |ansible|
+        ansible.playbook = "wp.yml"
+        end
+
+
+    end
+end

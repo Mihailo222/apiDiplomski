@@ -1,0 +1,97 @@
+vagrant
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:62:67:d4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 74480sec preferred_lft 74480sec
+    inet6 fe80::a00:27ff:fe62:67d4/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:2f:5e:e5 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.13/24 brd 192.168.56.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe2f:5ee5/64 scope link 
+       valid_lft forever preferred_lft forever
+EC2 instance of user vagrant...
+**********************************
+Filesystem udev tmpfs /dev/mapper/vgvagrant-root tmpfs tmpfs tmpfs /dev/sda1 vagrant tmpfs
+**********************************
+Kernel name: Linux
+Hostanme: host1
+Kernel release: 5.4.0-42-generic
+Kernel version: #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020
+Machine hardware name: x86_64
+************************************
+Filesystem                  Size  Used Avail Use% Mounted on
+udev                        449M     0  449M   0% /dev
+tmpfs                        99M  640K   98M   1% /run
+/dev/mapper/vgvagrant-root   77G  2.3G   71G   4% /
+tmpfs                       491M     0  491M   0% /dev/shm
+tmpfs                       5.0M     0  5.0M   0% /run/lock
+tmpfs                       491M     0  491M   0% /sys/fs/cgroup
+/dev/sda1                   511M  4.0K  511M   1% /boot/efi
+vagrant                     199G  198G  1.6G 100% /vagrant
+tmpfs                        99M     0   99M   0% /run/user/900
+************************************
+Interfaces and IP addresses: 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:62:67:d4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 74480sec preferred_lft 74480sec
+    inet6 fe80::a00:27ff:fe62:67d4/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:2f:5e:e5 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.13/24 brd 192.168.56.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe2f:5ee5/64 scope link 
+       valid_lft forever preferred_lft forever
+************************************
+Users
+root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody systemd-network systemd-resolve systemd-timesync messagebus syslog _apt uuidd tcpdump _rpc sshd statd vagrant systemd-coredump vboxadd
+Groups
+root daemon bin sys adm tty disk lp mail news uucp man proxy kmem dialout fax voice cdrom floppy tape sudo audio dip www-data backup operator list irc src gnats shadow utmp video sasl plugdev staff games users nogroup systemd-journal systemd-network systemd-resolve systemd-timesync crontab messagebus input kvm render syslog lxd uuidd tcpdump ssh vagrant lpadmin sambashare systemd-coredump vboxsf
+************************************
+User  root  uses  /bin/bash  shell and stores files in  /root  directory.  
+User  daemon  uses  /usr/sbin/nologin  shell and stores files in  /usr/sbin  directory.  
+User  bin  uses  /usr/sbin/nologin  shell and stores files in  /bin  directory.  
+User  sys  uses  /usr/sbin/nologin  shell and stores files in  /dev  directory.  
+User  sync  uses  /bin/sync  shell and stores files in  /bin  directory.  
+User  games  uses  /usr/sbin/nologin  shell and stores files in  /usr/games  directory.  
+User  man  uses  /usr/sbin/nologin  shell and stores files in  /var/cache/man  directory.  
+User  lp  uses  /usr/sbin/nologin  shell and stores files in  /var/spool/lpd  directory.  
+User  mail  uses  /usr/sbin/nologin  shell and stores files in  /var/mail  directory.  
+User  news  uses  /usr/sbin/nologin  shell and stores files in  /var/spool/news  directory.  
+User  uucp  uses  /usr/sbin/nologin  shell and stores files in  /var/spool/uucp  directory.  
+User  proxy  uses  /usr/sbin/nologin  shell and stores files in  /bin  directory.  
+User  www-data  uses  /usr/sbin/nologin  shell and stores files in  /var/www  directory.  
+User  backup  uses  /usr/sbin/nologin  shell and stores files in  /var/backups  directory.  
+User  list  uses  /usr/sbin/nologin  shell and stores files in  /var/list  directory.  
+User  irc  uses  /usr/sbin/nologin  shell and stores files in  /var/run/ircd  directory.  
+User  gnats  uses  /usr/sbin/nologin  shell and stores files in  /var/lib/gnats  directory.  
+User  nobody  uses  /usr/sbin/nologin  shell and stores files in  /nonexistent  directory.  
+User  systemd-network  uses  /usr/sbin/nologin  shell and stores files in  /run/systemd  directory.  
+User  systemd-resolve  uses  /usr/sbin/nologin  shell and stores files in  /run/systemd  directory.  
+User  systemd-timesync  uses  /usr/sbin/nologin  shell and stores files in  /run/systemd  directory.  
+User  messagebus  uses  /usr/sbin/nologin  shell and stores files in  /nonexistent  directory.  
+User  syslog  uses  /usr/sbin/nologin  shell and stores files in  /home/syslog  directory.  
+User  _apt  uses  /usr/sbin/nologin  shell and stores files in  /nonexistent  directory.  
+User  uuidd  uses  /usr/sbin/nologin  shell and stores files in  /run/uuidd  directory.  
+User  tcpdump  uses  /usr/sbin/nologin  shell and stores files in  /nonexistent  directory.  
+User  _rpc  uses  /usr/sbin/nologin  shell and stores files in  /run/rpcbind  directory.  
+User  sshd  uses  /usr/sbin/nologin  shell and stores files in  /run/sshd  directory.  
+User  statd  uses  /usr/sbin/nologin  shell and stores files in  /var/lib/nfs  directory.  
+User  vagrant  uses  /bin/bash  shell and stores files in  /home/vagrant  directory.  
+User  systemd-coredump  uses  /usr/sbin/nologin  shell and stores files in  /  directory.  
+User  vboxadd  uses  /bin/false  shell and stores files in  /var/run/vboxadd  directory.  

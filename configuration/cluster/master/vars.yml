@@ -1,0 +1,5 @@
+---
+ location_dir: /mnt/c/Users/Acer/vagrant_projects_for_wsl/laravel2/project-name/configuration/cluster
+ master_dir: master
+ keepalive_dir: keepalive
+ nameserver_file_folder: nameserver

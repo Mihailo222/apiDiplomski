@@ -1,0 +1,36 @@
+acl "trusted_clients" {
+192.168.56.10; #dns
+192.168.56.11; #wp_server
+192.168.56.17; #db master
+192.168.56.18; #db slave
+192.168.56.25; 
+localhost;
+};
+
+
+options {
+        directory "/var/cache/bind";
+
+
+          forwarders {
+                8.8.8.8;
+                8.8.4.4;
+          };
+
+        dnssec-validation auto;
+
+        auth-nxdomain no;
+
+        listen-on-v6 { ::1; };
+
+        listen-on port 53 {  localhost; 192.168.56.10; };
+  
+
+
+        recursion yes;
+        allow-recursion {  trusted_clients; };
+        allow-query {  trusted_clients; };
+        allow-query-cache { trusted_clients; }; 
+
+
+};
